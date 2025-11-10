@@ -50,6 +50,10 @@
             <HintPath>packages\ExMod.Exiled.9.10.1\lib\net48\CommandSystem.Core.dll</HintPath>
             <Private>false</Private>
         </Reference>
+        <Reference Include="DarkAPI">
+          <HintPath>..\Libs\DarkAPI.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
         <Reference Include="Exiled.API, Version=9.10.1.0, Culture=neutral, processorArchitecture=Amd64">
             <HintPath>packages\ExMod.Exiled.9.10.1\lib\net48\Exiled.API.dll</HintPath>
             <Private>false</Private>
@@ -129,6 +133,8 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Config.cs" />
+        <Compile Include="Features.cs" />
+        <Compile Include="Handler.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>

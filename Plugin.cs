@@ -19,11 +19,13 @@ namespace AdrenalinePlus
         public override void OnEnabled()
         {
             Instance = this;
+            DarkAPI.Plugin.AddRegistrator(Config.Handler);
             base.OnEnabled();
         }
 
         public override void OnDisabled()
         {
+            DarkAPI.Plugin.RemoveRegistrator(Config.Handler);
             Instance = null;
             base.OnDisabled();
         }
